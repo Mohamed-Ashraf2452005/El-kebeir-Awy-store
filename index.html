@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Buy now the latest 2024 mobiles at the cheapest prices">
+    <meta name="description" content="Contact us: 01016313032 - 01011890006">
+    <link rel="icon" type="image/png" href="Icon.jpg">
+    <title>ElKabeir Awy Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+        }
+
+        .ad-left,
+        .ad-right {
+            position: fixed;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ad-left {
+            left: 0;
+        }
+
+        .ad-right {
+            right: 0;
+        }
+
+        .ad-content {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #00509e;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #003366;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #003366;
+            margin: 20px 0;
+        }
+
+        p,
+        ol {
+            max-width: 800px;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #e6f2ff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #003366;
+        }
+
+        footer p {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .fade {
+            animation: fade 1.5s;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            background-color: #003366;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .text {
+            color: #07716c;
+            font-size: 24px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ElKabeir Awy Shop</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li></li>
+            <li><a href="Brands.html">Shop Now</a></li>
+        </ul>
+    </nav>
+
+    <div class="ad-left" id="ad-left">
+        <button class="close-btn" onclick="closeAd('ad-left')">&times;</button>
+        <p class="ad-content">To advertise here, please contact: <br> 01016313032</p>
+    </div>
+    <div class="ad-right" id="ad-right">
+        <button class="close-btn" onclick="closeAd('ad-right')">&times;</button>
+        <p class="ad-content">To advertise here, please contact: <br> 01016313032</p>
+    </div>
+
+    <h2>About ElKabeir Awy Shop</h2>
+    <p><b>ElKabeir Awy shop</b> is a retail store specializing in the sale of mobile phones, related accessories, and
+        often services like repairs, SIM cards, and mobile plans. Mobile shops may offer products from various brands,
+        including smartphones, basic cell phones, chargers, headphones, cases, screen protectors, and other add-ons that
+        enhance or protect mobile devices.</p>
+
+    <h2>Why Choose Us?</h2>
+    <ol>
+        <li>
+            <strong>Product Selection and Variety:</strong> Our store has a broad range of brands, models, and
+            accessories which is more likely to meet diverse customer needs, allowing shoppers to compare products and find the best fit.
+        </li>
+        <li>
+            <strong>Competitive Pricing:</strong> Our store offering competitive prices, discounts, and promotions generally which attract more customers.
+        </li>
+        <li>
+            <strong>Knowledgeable and Helpful Staff:</strong> Sales associates who are well-trained and knowledgeable about the latest devices, plans, and technical specifications can guide customers toward the best choice for their needs, enhancing the overall shopping experience.
+        </li>
+        <li>
+            <strong>Quality of Service and After-Sales Support:</strong> Reliable after-sales support, such as easy returns, warranties, and efficient repair services, helps build customer trust.
+        </li>
+        <li>
+            <strong>Customer Service and Personalization:</strong> Friendly and attentive customer service, including personalized recommendations and support, creates a positive experience that makes customers more likely to return and recommend our store.
+        </li>
+    </ol>
+
+    <h2>Top Selling Products</h2>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="a15_colors_resized.webp" alt="Product 1">
+            <div class="text">SAMSUNG GALAXY A15</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="reno_12f_5G_colors_resized.webp" alt="Product 2">
+            <div class="text">OPPO RENO 12f 5G</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Honor-X9b-Colors_resized.webp" alt="Product 3">
+            <div class="text">HONOR X9b</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="resized_image_3.jpg" alt="Product 3">
+            <div class="text">REALME 12 PRO PLUS</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="resized_image_2 (1).jpg" alt="Product 3">
+            <div class="text">VIVO Y18</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="resized_image_1 (1).jpg" alt="Product 3">
+            <div class="text">INFINIX HOT 50i</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+
+    <footer id="contact">
+        <h2>How to contact us</h2>
+        <p>
+            <a href="https://www.facebook.com/p/%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1-%D8%A3%D9%88%D9%8A-100063785444386/"
+                target="_blank"><img src="facebook-3-2.svg" alt="Facebook"></a>
+            <a href="https://wa.me/qr/25ADICCYXMXWC1" target="_blank"><img src="whatsapp-8.svg" alt="Whatsapp"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="official-gmail-icon-2020-.svg" alt="Gmail"></a>
+            <a href="https://www.google.com/maps/place/3QW5%2BV59+%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1+%D8%A7%D9%88%D9%89+%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84+%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%D8%A9,+%D8%A7%D9%84%D8%AD%D8%B3%D9%8A%D9%86%D9%8A%D8%8C+%D9%82%D8%B3%D9%85+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7%D8%8C+%D8%A3%D9%88%D9%84+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7+2451152%E2%80%AD/data=!4m2!3m1!1s0x145b25ed04a4e89b:0x94b5b7af34ca813?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjE0NC4xMDUYACCenQoqbCw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICRUc%3D"
+                target="_blank"><img src="logo-google-maps.svg" alt="Google Maps"></a>
+        </p>
+    </footer>
+
+    <script>
+        function closeAd(adId) {
+            document.getElementById(adId).style.display = 'none';
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
